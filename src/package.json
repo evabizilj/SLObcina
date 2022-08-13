@@ -1,0 +1,39 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --exit",
+    "build": "ng build"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.5.0",
+    "test": "mocha test --bail --reporter mochawesome --reporter-options autoOpen=true,reportDir=test/porocilo,reportFilename=porocilo,json=false"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.14",
+    "cookie-parser": "*",
+    "debug": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-jwt": "^7.7.0",
+    "hbs": "*",
+    "http-errors": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "mysql": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "selenium-webdriver": "*"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chromedriver": "^101.0.0",
+    "mocha": "^10.0.0",
+    "supertest": "*",
+    "mochawesome": "^7.1.3"
+  }
+}
